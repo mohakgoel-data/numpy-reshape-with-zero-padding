@@ -25,7 +25,7 @@ for i in range (0,size):
 
 def rowCon(): #Asks the user for row count and ensures it’s valid for reshaping.
     rows = int(input("Enter the number of rows you want it to have: "))
-    if rows <= size/2 or rows == size:
+    if size/rows >=1:
         return rows
 
     else:
